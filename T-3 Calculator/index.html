@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR BY PRASAD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Simple calculator</h2>
+    <form name="cal" >
+        <div class="calculator">
+            <input type="text" name="disp" id="display" value="" readonly>
+            <div class="buttons">
+                <input type="button" value="0" onclick="cal.disp.value+='0'">
+                <input type="button" value="1" onclick="cal.disp.value+='1'">
+                <input type="button" value="2" onclick="cal.disp.value+='2'">
+                <input type="button" class="operator" name="plus" value="+" onclick="cal.disp.value+='+'">
+                <input type="button" value="3" onclick="cal.disp.value+='3'">
+                <input type="button" value="4" onclick="cal.disp.value+='4'">
+                <input type="button" value="5" onclick="cal.disp.value+='5'">
+                <input type="button" class="operator" name="minus" value="-" onclick="cal.disp.value+='-'">
+                <input type="button" value="6" onclick="cal.disp.value+='6'">
+                <input type="button" value="7" onclick="cal.disp.value+='7'">
+                <input type="button" value="8" onclick="cal.disp.value+='8'">
+                <input type="button" class="operator" name="multiply" value="*" onclick="cal.disp.value+='*'">
+                <input type="button" value="9" onclick="cal.disp.value+='9'">
+                <input type="button" id="clear" name="clear" value="C" onclick="cal.disp.value=''">
+                <input type="button" class="operator" name="equal" value="=" onclick="cal.disp.value = eval(cal.disp.value)">
+                <input type="button" class="operator" name="div" value="/" onclick="cal.disp.value+='/'">
+            </div>
+        </div>
+    </form>
+</body>
+</html>
